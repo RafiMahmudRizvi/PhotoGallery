@@ -38,7 +38,7 @@ function App() {
 
   return (
     <div className="App">
-     <Heading />
+     {!modal && <Heading />}
       {modal ? <FullImage setModal={setModal} fullImage={fullImage}/> :
          
       <InfiniteScroll
